@@ -1,8 +1,5 @@
 <template>
   <div class="wrapper">
-      <p>账号<input type="text" name="" id=""></p>
-      <p>密码<input type="password" name="" id=""></p>
-      <h1>login</h1>
 
   </div>
 </template>
@@ -44,11 +41,4 @@ export default {
 </script>
 
 <style scoped>
-.wrapper {
-    padding-top: 300px;
-}
-p,h1{
-    text-align: center;
-    margin: 20px;
-}
 </style>

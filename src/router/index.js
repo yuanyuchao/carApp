@@ -11,7 +11,11 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: home
+      component: home,
+      meta:{
+        keepAlive:true,
+        title:'首页',
+      },
     },
     {
       path: '/home',
