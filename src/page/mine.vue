@@ -22,7 +22,7 @@ export default {
   computed:{},
   methods:{
       getData:function(){
-          axios.post('http://192.168.1.97/Page/LoginCode',{
+          axios.post('/Page/LoginCode',{
              Account:this.Account,
              Password:this.Password,
           }).then(res=>{

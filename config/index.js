@@ -5,19 +5,21 @@
 const path = require('path')
 
 module.exports = {
+
   dev: {
 
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-    //   '/api': {
-    //     target: 'http://192.168.1.97',//后端接口地址
-    //     changeOrigin: true,//是否允许跨越
-    //     pathRewrite: {
-    //         '^/api': '/api',//重写,
-    //     }
-    // }
+      '/api': {
+        target: 'http://192.168.1.97/api',//后端接口地址
+        changeOrigin: true,//是否允许跨越
+        secure: false,
+        pathRewrite: {
+            '^/api': '',//重写,
+        }
+    }
     },
 
     // Various Dev Server settings
